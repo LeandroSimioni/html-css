@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Miskan';
+            src: url('fonts/Miskan.otf') format('opentype'), url('fonts/Miskan.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+       
+        /*
+        TIPOS DE FORMAT()
+        - OPENTYPE (OTF)
+        -TRUETYPE (TTF)
+        -EMBEDDED-OPETYPE
+        -TRUETYPE-ATT(APPLE ADVANCED TYPOGRAPHY)
+        -SVG
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Miskan', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident natus corporis illum aliquid, qui ipsa. Mollitia ab provident voluptas voluptatum unde, est sit porro, exercitationem ducimus sed aperiam, earum repellendus!</p>
+    
+</body>
+</html>
