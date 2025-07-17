@@ -14,79 +14,124 @@
             border-collapse: collapse;
         }
 
-         td, th {
+        .media {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .notas {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .final {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+        }
+
+        .mediafinal {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+        }
+
+        .area {
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        
+
+         th {
             border: 1px solid black;
             padding: 10px;
+            text-align: left;
+            font-weight: lighter;
+            
+           
          }
+         td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            
+         }
+
     </style>
 </head>
 <body>
+    <h1>MÉDIA FINAL ALUNO</h1>
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2" >Disciplinas</th>
-                <th colspan="2" rowspan="2">Notas</th>
-                <th>nota 1</th>
-                <th>nota 2</th>
-                <th colspan="2">Média</th>
-                
+                <th rowspan="2" scope="col" class="notas">Área</th>
+                <th rowspan="2" scope="rowgroup" class="notas">Disciplinas</th>
+                <th colspan="2" scope="colgroup" class="notas">Notas</th>
+                <th rowspan="3" scope="col" class="media">Média</th>
 
+            <tr>
+                <th scope="col" class="notas">Nota 1</th>
+                <th scope="col" class="notas">Nota 2</th>
+            </tr>
             </tr>
             
         </thead>
 
         <tbody>
-       
-    
             <tr>
-                <th rowspan="4">Exatas</th>
-                <th>Matemática</th>
+                <th rowspan="4" scope="rowgroup" class="area">Exatas</th>
+                <th scope="rowgroup">Matemática</th>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 </tr>
 
                 <tr>
-                    <th>Física</th>
+                    <th scope="rowgroup">Física</th>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <th>Química</th>
+                    <th scope="rowgroup">Química</th>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <th>Biologia</th>
+                    <th scope="rowgroup">Biologia</th>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
             </tr>
             <tr>
-                <th colspan="6">Média de Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="mediafinal">Média de Exatas</th>
+                <td class="final">0.0</td>
             </tr>
              <tr>
-                <th rowspan="2">Humanas</th>
-                <th>História</th>
+                <th rowspan="2" scope="rowgroup" class="area">Humanas</th>
+                <th scope="rowgroup">História</th>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 </tr>
-                <tr>
-                    <th>Geografia</th>
-                    <td>0.0</td>
-                    <td>0.0</td>
-                    <td>0.0</td>
-                </tr>
+
+            <tr>
+                <th scope="rowgroup">Geografia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>    
+            </tr>
             </tr>
             <tr>
-                <th colspan="6">Média de Humanas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="mediafinal">Média de Humanas</th>
+                <td class="final">0.0</td>
             </tr>
 
         </tbody>
