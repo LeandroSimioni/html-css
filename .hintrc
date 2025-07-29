@@ -31,5 +31,11 @@
         ]
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not firefox <= 138",
+    "not safari <= 18.5"
+  ]
 }
