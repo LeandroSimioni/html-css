@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    
+
+}
+
+.caixa1 {
+    background-color: red;
+    /*abreviado
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    */
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+
+.caixa2 {
+    background-color: green;
+    /*abreviado
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+    grid-row: 2 / -1;
+    grid-column: 1 / 3; 
+}
+
+.caixa3 {
+    background-color: blue;
+    /*abreviado
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    */
+    grid-row: 2 / -1;
+    grid-column: 3 / -1;
+}
